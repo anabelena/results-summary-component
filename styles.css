@@ -109,14 +109,17 @@ body {
 }
 
 .result-summary{
-    max-width: 46rem;
+  --border-radius:2rem;
+    max-width: 46rem; 
+    /* html: 16px * 46 =  736 px */
     display: grid;
 }
 
+/* Media Query para laptop */
 @media(min-width:600px){
     .result-summary{
         grid-template-columns: repeat(2,1fr);
-        border-radius: 2rem;
+        border-radius: var(--border-radius);
         box-shadow: .5rem 1rem 3rem 
         hsl(var(--clr-neutral-hsl-700), .2);
         overflow: hidden;
@@ -127,4 +130,5 @@ body {
     color: hsl(var(--clr-neutral-hsl-100),.7);
     text-align: center;
     background: var(--gradient-primary);
+    border-radius: var(--border-radius);
 }

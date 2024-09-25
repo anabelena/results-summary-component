@@ -145,6 +145,7 @@ body {
   display: grid;
   place-content: center;
   width: 12rem;
+  /* margin-left margin-right */
   margin-inline: auto;
   background: var(--gradient-to-transparent);
   aspect-ratio: 1/1;
